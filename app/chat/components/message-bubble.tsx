@@ -9,9 +9,9 @@ export const MessageBubble = ({ message }: MessageBubbleProps) => {
   return (
     <div
       className={cn(
-        "max-w-[80%] p-2 rounded-2xl",
+        "max-w-[80%] p-1",
         message.role === "user"
-          ? "self-end bg-zinc-100 dark:bg-[#303030] text-zinc-900 dark:text-white"
+          ? "self-end bg-zinc-100 dark:bg-[#323232D9] text-zinc-900 dark:text-white rounded-[18px] "
           : "self-start text-zinc-800 dark:text-zinc-200"
       )}
     >
