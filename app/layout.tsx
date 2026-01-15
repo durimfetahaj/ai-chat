@@ -1,8 +1,6 @@
-import { AuthButton } from "@/components/auth-button";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Geist } from "next/font/google";
-import { Suspense } from "react";
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
@@ -35,11 +33,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed top-0 right-0  z-10 p-2">
-            <Suspense>
-              <AuthButton />
-            </Suspense>
-          </div>
           {children}
         </ThemeProvider>
       </body>
